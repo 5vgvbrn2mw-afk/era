@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ЦОН — Халыққа қызмет көрсету орталығы</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-inner">
+      <div class="logo">
+        <span class="logo-kz">ҚР</span>
+        <div class="logo-text">
+          <span class="logo-title">ЦОН</span>
+          <span class="logo-sub">Халыққа қызмет көрсету орталығы</span>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="#services">Қызметтер</a>
+        <a href="#about">Біз туралы</a>
+        <a href="#contacts">Байланыс</a>
+        <a href="#appointment" class="nav-btn">Кезек алу</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Мәзір">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="geo geo-1"></div>
+      <div class="geo geo-2"></div>
+      <div class="geo geo-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">🇰🇿 Қазақстан Республикасы</div>
+      <h1 class="hero-title">Мемлекеттік<br/><em>қызметтер</em><br/>— бір жерде</h1>
+      <p class="hero-desc">Барлық мемлекеттік қызметтерді жылдам, ыңғайлы және мөлдір түрде алыңыз. Кезекте тұрмай, онлайн шешіңіз.</p>
+      <div class="hero-actions">
+        <a href="#appointment" class="btn-primary">Кезек алу</a>
+        <a href="#services" class="btn-ghost">Қызметтерді көру</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">500+</span><span class="stat-label">Қызмет түрі</span></div>
+        <div class="stat-div"></div>
+        <div class="stat"><span class="stat-num">2 млн+</span><span class="stat-label">Өтініш/жыл</span></div>
+        <div class="stat-div"></div>
+        <div class="stat"><span class="stat-num">200+</span><span class="stat-label">Орталық</span></div>
+      </div>
+    </div>
+    <div class="hero-card-float">
+      <div class="float-card">
+        <div class="fc-icon">✅</div>
+        <div class="fc-info">
+          <span class="fc-title">№ A-4821 — Дайын</span>
+          <span class="fc-sub">Жеке куәлік</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POPULAR SERVICES -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Қызметтер</span>
+        <h2 class="section-title">Танымал қызметтер</h2>
+        <p class="section-sub">Ең жиі сұралатын мемлекеттік қызметтер</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card" data-delay="0">
+          <div class="sc-icon">🪪</div>
+          <h3>Жеке куәлік</h3>
+          <p>Жеке куәлік алу, ауыстыру немесе қалпына келтіру</p>
+          <span class="sc-time">⏱ 15 күн</span>
+          <a href="#appointment" class="sc-btn">Өтініш беру</a>
+        </div>
+        <div class="service-card" data-delay="1">
+          <div class="sc-icon">📋</div>
+          <h3>Тіркеу</h3>
+          <p>Тұрақты немесе уақытша тіркеу орнын белгілеу</p>
+          <span class="sc-time">⏱ 3 күн</span>
+          <a href="#appointment" class="sc-btn">Өтініш беру</a>
+        </div>
+        <div class="service-card" data-delay="2">
+          <div class="sc-icon">🏠</div>
+          <h3>Тұрғын үй</h3>
+          <p>Жылжымайтын мүлікті тіркеу, өту және анықтамалар</p>
+          <span class="sc-time">⏱ 7 күн</span>
+          <a href="#appointment" class="sc-btn">Өтініш беру</a>
+        </div>
+        <div class="service-card" data-delay="3">
+          <div class="sc-icon">👶</div>
+          <h3>Туу туралы</h3>
+          <p>Туу куәлігін алу және баланы тіркеу</p>
+          <span class="sc-time">⏱ 3 күн</span>
+          <a href="#appointment" class="sc-btn">Өтініш беру</a>
+        </div>
+        <div class="service-card" data-delay="4">
+          <div class="sc-icon">🚗</div>
+          <h3>Жүргізуші куәлігі</h3>
+          <p>Жүргізуші куәлігін алу немесе ауыстыру</p>
+          <span class="sc-time">⏱ 10 күн</span>
+          <a href="#appointment" class="sc-btn">Өтініш беру</a>
+        </div>
+        <div class="service-card" data-delay="5">
+          <div class="sc-icon">💼</div>
+          <h3>Бизнес тіркеу</h3>
+          <p>ЖК немесе ТОО ашу, лицензиялар алу</p>
+          <span class="sc-time">⏱ 1 күн</span>
+          <a href="#appointment" class="sc-btn">Өтініш беру</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- APPOINTMENT -->
+  <section class="appointment" id="appointment">
+    <div class="container">
+      <div class="appt-wrapper">
+        <div class="appt-info">
+          <span class="section-tag light">Онлайн кезек</span>
+          <h2 class="section-title light">Кезекке жазылу</h2>
+          <p>Ыңғайлы уақытты таңдап, кезекте тұрмай қызмет алыңыз. SMS арқылы хабарлама жіберіледі.</p>
+          <ul class="appt-features">
+            <li>✔ Уақытты өзіңіз таңдайсыз</li>
+            <li>✔ SMS / Email хабарлама</li>
+            <li>✔ Кезекті ауыстыруға болады</li>
+            <li>✔ Тегін қызмет</li>
+          </ul>
+        </div>
+        <form class="appt-form" id="apptForm">
+          <div class="form-group">
+            <label>Қызмет түрі</label>
+            <select required>
+              <option value="">Таңдаңыз...</option>
+              <option>Жеке куәлік</option>
+              <option>Тіркеу</option>
+              <option>Тұрғын үй</option>
+              <option>Туу туралы</option>
+              <option>Жүргізуші куәлігі</option>
+              <option>Бизнес тіркеу</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Орталық</label>
+            <select required>
+              <option value="">Таңдаңыз...</option>
+              <option>ЦОН №1 — Алматы, Алмалы</option>
+              <option>ЦОН №2 — Алматы, Бостандық</option>
+              <option>ЦОН №3 — Алматы, Медеу</option>
+              <option>ЦОН №4 — Алматы, Үшқоңыр</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Күн</label>
+              <input type="date" required />
+            </div>
+            <div class="form-group">
+              <label>Уақыт</label>
+              <select required>
+                <option value="">Таңдаңыз...</option>
+                <option>09:00</option>
+                <option>09:30</option>
+                <option>10:00</option>
+                <option>10:30</option>
+                <option>11:00</option>
+                <option>14:00</option>
+                <option>14:30</option>
+                <option>15:00</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Телефон нөмірі</label>
+            <input type="tel" placeholder="+7 (___) ___-__-__" required />
+          </div>
+          <button type="submit" class="btn-primary full">Кезек алу</button>
+          <p class="form-note">Деректеріңіз қорғалған және тек ЦОН жүйесінде сақталады.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <span class="section-tag">Біз туралы</span>
+          <h2 class="section-title">Халыққа сапалы қызмет — біздің міндетіміз</h2>
+          <p>ЦОН — Қазақстан Республикасы азаматтарына мемлекеттік қызметтер көрсетудің бірыңғай операторы. Біз барлық мемлекеттік органдардың қызметтерін бір жерге жинадық.</p>
+          <p>2007 жылдан бастап жұмыс істейміз және елімізде 200-ден астам орталығымыз бар.</p>
+          <div class="about-badges">
+            <div class="badge-item">🏆 ТМД елдерінде үздік</div>
+            <div class="badge-item">🔒 ISO 27001 сертификаты</div>
+            <div class="badge-item">♿ Барлығына қолжетімді</div>
+          </div>
+        </div>
+        <div class="about-cards">
+          <div class="info-card">
+            <div class="ic-num">98%</div>
+            <div class="ic-label">Азаматтардың қанағаттану деңгейі</div>
+          </div>
+          <div class="info-card accent">
+            <div class="ic-num">30 мин</div>
+            <div class="ic-label">Орташа қызмет көрсету уақыты</div>
+          </div>
+          <div class="info-card">
+            <div class="ic-num">24/7</div>
+            <div class="ic-label">Онлайн қызметтер жұмыс уақыты</div>
+          </div>
+          <div class="info-card accent-2">
+            <div class="ic-num">0 ₸</div>
+            <div class="ic-label">Негізгі қызметтер тегін</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTS -->
+  <section class="contacts" id="contacts">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Байланыс</span>
+        <h2 class="section-title">Бізбен байланысыңыз</h2>
+      </div>
+      <div class="contacts-grid">
+        <div class="contact-card">
+          <div class="cc-icon">📞</div>
+          <h4>Байланыс орталығы</h4>
+          <a href="tel:1414">1414</a>
+          <p>Тегін, тәулік бойы</p>
+        </div>
+        <div class="contact-card">
+          <div class="cc-icon">🌐</div>
+          <h4>Веб-портал</h4>
+          <a href="https://egov.kz" target="_blank">egov.kz</a>
+          <p>Онлайн қызметтер</p>
+        </div>
+        <div class="contact-card">
+          <div class="cc-icon">✉️</div>
+          <h4>Email</h4>
+          <a href="mailto:info@con.gov.kz">info@con.gov.kz</a>
+          <p>Хат жазыңыз</p>
+        </div>
+        <div class="contact-card">
+          <div class="cc-icon">📍</div>
+          <h4>Мекенжай</h4>
+          <p>Алматы, Абай даңғылы 42</p>
+          <p>Дүйсенбі–Жұма: 9:00–18:00</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="logo-kz">ҚР</span>
+          <div>
+            <span class="footer-title">ЦОН</span>
+            <span class="footer-sub">© 2024 Барлық құқықтар қорғалған</span>
+          </div>
+        </div>
+        <div class="footer-links">
+          <a href="#">Құпиялылық саясаты</a>
+          <a href="#">Пайдалану шарттары</a>
+          <a href="#">Сайт картасы</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SUCCESS MODAL -->
+  <div class="modal" id="modal">
+    <div class="modal-box">
+      <div class="modal-icon">🎉</div>
+      <h3>Кезек алынды!</h3>
+      <p>Нөміріңіз: <strong id="ticketNum"></strong></p>
+      <p>SMS хабарлама жіберілді.</p>
+      <button class="btn-primary" onclick="closeModal()">Жабу</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
